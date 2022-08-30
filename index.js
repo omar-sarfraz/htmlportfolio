@@ -24,24 +24,29 @@ drop1.addEventListener('click', () => {
     if(para1.dataset.open === 'false'){
         para1.dataset.open = 'true';
         para1.classList.remove('paragraph-hidden');
+        para1.classList.add('paragraph-hidden-end');
     } else {
         para1.dataset.open = 'false';
         para1.classList.add('paragraph-hidden');
+        para1.classList.remove('paragraph-hidden-end');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
+        para2.classList.remove('paragraph-hidden-end');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
+        para3.classList.remove('paragraph-hidden-end');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
+        para4.classList.remove('paragraph-hidden-end');
     }
 });
 
@@ -49,24 +54,29 @@ drop2.addEventListener('click', () => {
     if(para2.dataset.open === 'false'){
         para2.dataset.open = 'true';
         para2.classList.remove('paragraph-hidden');
+        para2.classList.add('paragraph-hidden-end');
     } else {
         para2.dataset.open = 'false';
         para2.classList.add('paragraph-hidden');
+        para2.classList.remove('paragraph-hidden-end');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
+        para1.classList.remove('paragraph-hidden-end');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
+        para3.classList.remove('paragraph-hidden-end');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
+        para4.classList.remove('paragraph-hidden-end');
     }
 });
 
@@ -74,24 +84,29 @@ drop3.addEventListener('click', () => {
     if(para3.dataset.open === 'false'){
         para3.dataset.open = 'true';
         para3.classList.remove('paragraph-hidden');
+        para3.classList.add('paragraph-hidden-end');
     } else {
         para3.dataset.open = 'false';
         para3.classList.add('paragraph-hidden');
+        para3.classList.remove('paragraph-hidden-end');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
+        para2.classList.remove('paragraph-hidden-end');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
+        para1.classList.remove('paragraph-hidden-end');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
+        para4.classList.remove('paragraph-hidden-end');
     }
 });
 
@@ -99,23 +114,28 @@ drop4.addEventListener('click', () => {
     if(para4.dataset.open === 'false'){
         para4.dataset.open = 'true';
         para4.classList.remove('paragraph-hidden');
+        para4.classList.add('paragraph-hidden-end');
     } else {
         para4.dataset.open = 'false';
         para4.classList.add('paragraph-hidden');
+        para4.classList.remove('paragraph-hidden-end');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
+        para2.classList.remove('paragraph-hidden-end');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
+        para3.classList.remove('paragraph-hidden-end');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
+        para1.classList.remove('paragraph-hidden-end');
     }
 });

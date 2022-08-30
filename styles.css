@@ -37,6 +37,11 @@ header{
     font-size: 1.4rem;
 }
 
+.logo a{
+    text-decoration: none;
+    color: var(--black);
+}
+
 #cross{
     position: absolute;
     right: 1rem;
@@ -117,6 +122,8 @@ nav li{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-social{
@@ -212,7 +219,20 @@ nav li{
 }
 
 .paragraph-hidden{
-    display: none;
+    overflow: hidden;
+    transform: translateY(-20px);
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.paragraph-hidden-end{
+    overflow: hidden;
+    height: unset;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
 }
 
 .list{
@@ -345,6 +365,13 @@ nav li{
     height: 25px;
 }
 
+.projects-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
 .footer{
     background-color: var(--black);
     color: var(--primary-color);
@@ -405,6 +432,33 @@ nav li{
     color: var(--primary-color);
 }
 
+.footer .container{
+    width: 60%;
+}
+
+.circular-btn{
+    display: none;
+    background-color: var(--primary-color);
+    border-radius: 4rem;
+    font-weight: bold;
+    width: 2.6rem;
+    padding: 1rem;
+}
+
+.circular-btn a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+@keyframes para-anim {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @keyframes card-hover {
     0%{
@@ -413,4 +467,193 @@ nav li{
     100%{
         transform: translateY(-30px);
     }
+}
+
+
+@media (min-width: 786px) {
+    
+    .container{
+        max-width: 900px;
+    }
+
+    .hero .container{
+        display: flex;
+    }
+
+    .hero .left{
+        width: 70%;
+        display: inline;
+    }
+
+    .hero-pic-main{
+        width: 45%;
+    }
+
+    .hero-pic{
+        width: 140%;
+        display: inline;
+        margin: 0;
+        position: relative;
+        left: -25%;
+        z-index: -1;
+    }
+
+    .hero-btn-social{
+        justify-content: left;
+    }
+
+    .hero-social{
+        justify-content: left;
+    }
+
+    .hero-social h3{
+        text-align: left;
+    }
+
+    .hero-social div{
+        justify-content: left;
+    }
+
+    .hero-heading{
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.4rem;
+    }
+    .hero{
+        padding-bottom: 5rem;
+    }
+
+    .nav-d-none{
+        display: inline;
+    }
+
+    #cross, #menu{
+        display: none;
+    }
+
+    nav{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav li{
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    nav ul{
+        display: inline;
+        margin: 0;
+    }
+    
+    .nav-link{
+        color: var(--black);
+        font-size: medium;
+        font-weight: normal;
+    }
+    
+    .email-button-nav{
+        width: 8rem;
+        display: inline;
+        padding: 0.4rem 1rem;
+        text-align: center;
+        right: 0;
+        border: 1.5px solid var(--black);
+    }
+
+    .email-button-nav, .email-button-nav a{
+        color: var(--black);
+    }
+
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .develop-credits{
+        margin: 0;
+    }
+
+    .email{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 4rem;
+    }
+
+    .footer .container{
+        width: 100%;
+    }
+
+    .footer-heading h1{
+        font-size: 2.5rem;
+    }
+
+    .footer-heading a{
+        font-size: 1.6rem;
+        padding: .6rem 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .container{
+        max-width: 1100px;
+    }
+
+    .hero-heading{
+        margin-top: 6rem;
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .black-btn{
+        width: 40%;
+    }
+
+    nav li{
+        margin-right: 2rem;
+    }
+
+    .circular-btn{
+        display: block;
+    }
+
+    .service{
+        padding-top: 1rem;
+    }
+
+    .services .container{
+        display: flex;
+        gap: 8rem;
+    }
+
+    .service-left{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .service-right{
+        width: 65%;
+    }
+
+    .service-inner h1{
+        font-size: 2.2rem;
+    }
+    
+    .service-inner p{
+        font-size: 1.3rem;
+    }
+
 }
