@@ -345,6 +345,66 @@ nav li{
     height: 25px;
 }
 
+.footer{
+    background-color: var(--black);
+    color: var(--primary-color);
+}
+
+.footer-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-heading h1{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--black);
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.develop-credits{
+    margin-top: 3rem;
+}
+
+.develop-credits h3,p{
+    margin: 0;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.email img{
+    width: 25px;
+    height: 25px;
+    margin-right: .4rem;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.design-credits{
+    border-top: 1px solid var(--primary-color);
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    color: var(--primary-color);
+}
+
+.design-credits a{
+    color: var(--primary-color);
+}
+
 
 @keyframes card-hover {
     0%{
