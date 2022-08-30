@@ -9,3 +9,113 @@ menu.addEventListener('click', () => {
 cross.addEventListener('click', () => {
     nav.classList.add('nav-d-none');
 })
+
+let drop1 = document.getElementById('dropdown1');
+let drop2 = document.getElementById('dropdown2');
+let drop3 = document.getElementById('dropdown3');
+let drop4 = document.getElementById('dropdown4');
+
+let para1 = document.getElementById('p1');
+let para2 = document.getElementById('p2');
+let para3 = document.getElementById('p3');
+let para4 = document.getElementById('p4');
+
+drop1.addEventListener('click', () => {
+    if(para1.dataset.open === 'false'){
+        para1.dataset.open = 'true';
+        para1.classList.remove('paragraph-hidden');
+    } else {
+        para1.dataset.open = 'false';
+        para1.classList.add('paragraph-hidden');
+    }
+
+    if(para2.dataset.open === 'true'){
+        para2.classList.add('paragraph-hidden');
+        para2.dataset.open = 'false';
+    }
+
+    if(para3.dataset.open === 'true'){
+        para3.classList.add('paragraph-hidden');
+        para3.dataset.open = 'false';
+    }
+
+    if(para4.dataset.open === 'true'){
+        para4.classList.add('paragraph-hidden');
+        para4.dataset.open = 'false';
+    }
+});
+
+drop2.addEventListener('click', () => {
+    if(para2.dataset.open === 'false'){
+        para2.dataset.open = 'true';
+        para2.classList.remove('paragraph-hidden');
+    } else {
+        para2.dataset.open = 'false';
+        para2.classList.add('paragraph-hidden');
+    }
+
+    if(para1.dataset.open === 'true'){
+        para1.classList.add('paragraph-hidden');
+        para1.dataset.open = 'false';
+    }
+
+    if(para3.dataset.open === 'true'){
+        para3.classList.add('paragraph-hidden');
+        para3.dataset.open = 'false';
+    }
+
+    if(para4.dataset.open === 'true'){
+        para4.classList.add('paragraph-hidden');
+        para4.dataset.open = 'false';
+    }
+});
+
+drop3.addEventListener('click', () => {
+    if(para3.dataset.open === 'false'){
+        para3.dataset.open = 'true';
+        para3.classList.remove('paragraph-hidden');
+    } else {
+        para3.dataset.open = 'false';
+        para3.classList.add('paragraph-hidden');
+    }
+
+    if(para2.dataset.open === 'true'){
+        para2.classList.add('paragraph-hidden');
+        para2.dataset.open = 'false';
+    }
+
+    if(para1.dataset.open === 'true'){
+        para1.classList.add('paragraph-hidden');
+        para1.dataset.open = 'false';
+    }
+
+    if(para4.dataset.open === 'true'){
+        para4.classList.add('paragraph-hidden');
+        para4.dataset.open = 'false';
+    }
+});
+
+drop4.addEventListener('click', () => {
+    if(para4.dataset.open === 'false'){
+        para4.dataset.open = 'true';
+        para4.classList.remove('paragraph-hidden');
+    } else {
+        para4.dataset.open = 'false';
+        para4.classList.add('paragraph-hidden');
+    }
+
+    if(para2.dataset.open === 'true'){
+        para2.classList.add('paragraph-hidden');
+        para2.dataset.open = 'false';
+    }
+
+    if(para3.dataset.open === 'true'){
+        para3.classList.add('paragraph-hidden');
+        para3.dataset.open = 'false';
+    }
+
+    if(para1.dataset.open === 'true'){
+        para1.classList.add('paragraph-hidden');
+        para1.dataset.open = 'false';
+    }
+});
