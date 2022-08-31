@@ -12,6 +12,23 @@ body{
     background-color: var(--primary-color);
 }
 
+/* .overlay{
+    position: absolute;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: var(--black);
+    font-family: 'Dancing Script';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-hidden{
+    display: none !important;
+} */
+
 .container{
     max-width: 650px;
 }
@@ -706,6 +723,35 @@ nav li a:hover::after{
 
 .card-bottom svg{
     cursor: pointer;
+}
+
+.p-card:nth-child(1){
+    opacity: 0;
+    animation: li 2s forwards;
+}
+
+.p-card:nth-child(2){
+    opacity: 0;
+    animation: li 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.p-card:nth-child(3){
+    opacity: 0;
+    animation: li 2s forwards;
+    animation-delay: 1s;
+}
+
+.p-card:nth-child(4){
+    opacity: 0;
+    animation: li 2s forwards;
+    animation-delay: 1.5s;
+}
+
+.p-card:nth-child(5){
+    opacity: 0;
+    animation: li 2s forwards;
+    animation-delay: 2s;
 }
 
 @keyframes card-section {

@@ -1,3 +1,9 @@
+// let overlay = document.getElementById('over');
+
+// function removeOverlay(){
+//     overlay.classList.add('overlay-hidden');
+// }
+
 let menu = document.getElementById('menu');
 let nav = document.getElementById('nav');
 let cross = document.getElementById('cross');
