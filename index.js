@@ -25,28 +25,33 @@ drop1.addEventListener('click', () => {
         para1.dataset.open = 'true';
         para1.classList.remove('paragraph-hidden');
         para1.classList.add('paragraph-hidden-end');
+        drop1.classList.add('flip-vertical');
     } else {
         para1.dataset.open = 'false';
         para1.classList.add('paragraph-hidden');
         para1.classList.remove('paragraph-hidden-end');
+        drop1.classList.remove('flip-vertical');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
         para2.classList.remove('paragraph-hidden-end');
+        drop2.classList.remove('flip-vertical');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
         para3.classList.remove('paragraph-hidden-end');
+        drop3.classList.remove('flip-vertical');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
         para4.classList.remove('paragraph-hidden-end');
+        drop4.classList.remove('flip-vertical');
     }
 });
 
@@ -55,28 +60,33 @@ drop2.addEventListener('click', () => {
         para2.dataset.open = 'true';
         para2.classList.remove('paragraph-hidden');
         para2.classList.add('paragraph-hidden-end');
+        drop2.classList.add('flip-vertical');
     } else {
         para2.dataset.open = 'false';
         para2.classList.add('paragraph-hidden');
         para2.classList.remove('paragraph-hidden-end');
+        drop2.classList.remove('flip-vertical');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
         para1.classList.remove('paragraph-hidden-end');
+        drop1.classList.remove('flip-vertical');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
         para3.classList.remove('paragraph-hidden-end');
+        drop3.classList.remove('flip-vertical');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
         para4.classList.remove('paragraph-hidden-end');
+        drop4.classList.remove('flip-vertical');
     }
 });
 
@@ -85,28 +95,33 @@ drop3.addEventListener('click', () => {
         para3.dataset.open = 'true';
         para3.classList.remove('paragraph-hidden');
         para3.classList.add('paragraph-hidden-end');
+        drop3.classList.add('flip-vertical');
     } else {
         para3.dataset.open = 'false';
         para3.classList.add('paragraph-hidden');
         para3.classList.remove('paragraph-hidden-end');
+        drop3.classList.remove('flip-vertical');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
         para2.classList.remove('paragraph-hidden-end');
+        drop2.classList.remove('flip-vertical');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
         para1.classList.remove('paragraph-hidden-end');
+        drop1.classList.remove('flip-vertical');
     }
 
     if(para4.dataset.open === 'true'){
         para4.classList.add('paragraph-hidden');
         para4.dataset.open = 'false';
         para4.classList.remove('paragraph-hidden-end');
+        drop4.classList.remove('flip-vertical');
     }
 });
 
@@ -115,27 +130,32 @@ drop4.addEventListener('click', () => {
         para4.dataset.open = 'true';
         para4.classList.remove('paragraph-hidden');
         para4.classList.add('paragraph-hidden-end');
+        drop4.classList.add('flip-vertical');
     } else {
         para4.dataset.open = 'false';
         para4.classList.add('paragraph-hidden');
         para4.classList.remove('paragraph-hidden-end');
+        drop4.classList.remove('flip-vertical');
     }
 
     if(para2.dataset.open === 'true'){
         para2.classList.add('paragraph-hidden');
         para2.dataset.open = 'false';
         para2.classList.remove('paragraph-hidden-end');
+        drop2.classList.remove('flip-vertical');
     }
 
     if(para3.dataset.open === 'true'){
         para3.classList.add('paragraph-hidden');
         para3.dataset.open = 'false';
         para3.classList.remove('paragraph-hidden-end');
+        drop3.classList.remove('flip-vertical');
     }
 
     if(para1.dataset.open === 'true'){
         para1.classList.add('paragraph-hidden');
         para1.dataset.open = 'false';
         para1.classList.remove('paragraph-hidden-end');
+        drop1.classList.remove('flip-vertical');
     }
 });
